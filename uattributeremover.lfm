@@ -1,0 +1,46 @@
+object frmAttributeRemover: TfrmAttributeRemover
+  Left = 256
+  Height = 86
+  Top = 145
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  Caption = 'Attribute Remover'
+  ClientHeight = 86
+  ClientWidth = 320
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.12.0'
+  object lblDrive: TLabel
+    Left = 16
+    Height = 15
+    Top = 24
+    Width = 27
+    Caption = 'Drive'
+    ParentColor = False
+  end
+  object cbxDrive: TComboBox
+    Left = 56
+    Height = 23
+    Top = 20
+    Width = 100
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object btnAttributeRemover: TButton
+    Left = 192
+    Height = 25
+    Top = 20
+    Width = 115
+    Caption = 'Attribute Remover'
+    OnClick = btnAttributeRemoverClick
+    TabOrder = 1
+  end
+  object pbrAttributeRemover: TProgressBar
+    Left = 16
+    Height = 20
+    Top = 56
+    Width = 291
+    TabOrder = 2
+  end
+end
